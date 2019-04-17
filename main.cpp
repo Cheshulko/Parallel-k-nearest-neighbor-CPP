@@ -83,9 +83,8 @@ int main(int argc, char* argv[]) {
         point.id = pointIndex++;
     }
 
-    auto calcKNearestNeighbors = [ptrPoints, ptrResultGrid, &points,
-                                  &neighbors](int indexFrom,
-                                              int indexTo) mutable {
+    auto calcKNearestNeighbors = [ptrPoints, ptrResultGrid, &neighbors](
+                                     int indexFrom, int indexTo) mutable {
         std::set<std::pair<double, int>> minSet;
         double distance = 0;
         int pointIndex = -1;
