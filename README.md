@@ -4,13 +4,13 @@
 It is c++ parallel implementation of the k-nearest neighbor algorithm using async c++ threads. The data are evenly split between _n_ threads that each thread computes the _k_-nearest neighbor to its points.
 
 ## Input
-A input file _test_big.txt_ contains coordinates of 9271 3D-points in the world space.
+A input file _test_big.txt_ contains coordinates of 9271 _3D_-points in the world space.
 
 ## Output
 For each input point, find its _k_-nearest neighbors indexes. 
 
 ## Build and run
-To build use Makefile (c++11 needed)
+To build use Makefile (C++11 needed)
 ```
 make
 make clean
@@ -24,7 +24,7 @@ For instance,
 ## Benchmarks
 Intel(R) Xeon(R) CPU 2.00GHz
 
-For 9271 3D-points and _k_=5
+For 9271 _3D_-points and _k_=5
 
 | Threads  | Time, milisec |
 | -------  |---|
